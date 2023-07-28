@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: hsl(230, 17%, 14%);
+    padding: 3em;
+    padding-top: 2em;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+}
+
+header #column-1 h1{
+    color: hsl(0, 0%, 100%);
+}
+
+header #column-1 h3{
+    color: hsl(228, 34%, 66%);
+    padding-bottom: 1em;
+}
+
+header #column-2{
+    padding-left: 59em;
+}
+
+input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label {
+    cursor: pointer;
+    width: 3.125em;
+    height: 1.56em;
+    text-indent: -6em;
+    color: hsl(228, 34%, 66%);
+    background-image: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    display: block;
+    border-radius: 1.56em;
+    position: relative;
+}
+
+label::after{
+    content: '';
+    position: absolute;
+    top: 0.078125em;
+    left: 0.078125em;
+    width: 1.40625em;
+    height: 1.40625em;
+    background: #fff;
+    border-radius: 1.40625em;
+    transition: 0.3s;
+}
+
+input:checked + label {
+    background-color: grey;
+    background-image: none;
+}
+  
+input:checked + label:after {
+    left: calc(100% -  0.078125em);
+    transform: translateX(-100%);
+}
+  
+label:active:after {
+    width: 2.03125em;
+}
+
+#all-time{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2em;
+}
+
+#all-time #card{
+    margin: 1em;
+    background-color: hsl(228, 28%, 20%);
+    color: hsl(0, 0%, 100%);
+    width: 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    border-top-color: blue;
+}
+
+#all-time #card span{
+    color: hsl(228, 34%, 66%);
+    padding-bottom: 1em;
+}
+
+#all-time #card span img{
+    vertical-align: text-bottom;
+    padding-right: 0.2em;
+}
+
+#all-time #card #tic img{
+    vertical-align: middle;
+}
+
+#all-time #card h2{
+    font-size: 3em;
+}
+
+#all-time #card h3{
+    color: hsl(228, 34%, 66%);
+    padding-bottom: 1em;
+}
+
+h2{
+    color: hsl(0, 0%, 100%);
+    padding-bottom: 0.5em;
+}
+
+#today{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#today #card-2{
+    width: 20em;
+    height: 10em;
+    background-color: hsl(228, 28%, 20%);
+    color: hsl(0, 0%, 100%);
+    margin: 1em;
+    padding: 2em;
+    padding-bottom: 2em;
+    display: grid;
+    grid-template-columns: 12em 10em;
+    grid-template-rows: repeat(2, 3.5em);
+    
+}
+
+#today #card-2 h3{
+    height: 5em;
+    color: hsl(228, 34%, 66%);
+}
+
+#today #card-2 img{
+    width: 1.5em;
+    height: 1.5em;
+}
+
+#today #card-2 h2{
+    font-size: 3em;
+}
+
+#today #card-2 #tic{
+    width: 5em;
+    height: 2em;
+    padding-top: 1.5em;
+}
+
+#today #card-2 #tic img{
+    height: 0.5em;
+    width: 0.5em;
+}
