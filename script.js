@@ -1,7 +1,7 @@
 function isChecked() {
     var isChecked = document.getElementById("switch").checked;
 
-    let card1 = document.querySelectorAll("#card");
+    let card1 = document.getElementById("card");
     let card2 = document.getElementById("card-2");
     console.log(isChecked);
     if (isChecked){
