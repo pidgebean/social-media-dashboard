@@ -81,7 +81,7 @@ label:active:after {
     padding-bottom: 2em;
 }
 
-#all-time #card{
+#all-time #card-1, #card-2, #card-3, #card-4{
     margin: 1em;
     background-color: hsl(228, 28%, 20%);
     color: hsl(0, 0%, 100%);
@@ -93,7 +93,7 @@ label:active:after {
     border-top-color: blue;
 }
 
-#all-time #card span{
+#all-time #card-1, #card-2, #card-3, #card-4, span{
     color: hsl(228, 34%, 66%);
     padding-bottom: 1em;
 }
